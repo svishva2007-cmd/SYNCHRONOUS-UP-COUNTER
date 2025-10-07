@@ -67,9 +67,12 @@ Developed by: RegisterNumber:
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
-<img width="1314" height="648" alt="{856F7803-4CB2-4A85-801E-83059956497E}" src="https://github.com/user-attachments/assets/712a0885-45c4-435d-baa9-6c20c5a464ab" />
+<img width="1320" height="823" alt="image" src="https://github.com/user-attachments/assets/611dd31c-d330-43fe-bb3f-23cfb41ca00c" />
+
 
 
 **TRUTH TABLE**
 
 **RESULTS**
+
+Thus the Synchronous 3 bit Up counter is implemeted and verified.

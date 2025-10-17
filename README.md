@@ -30,29 +30,10 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 /* write all the steps invloved */
 
-**PROGRAM**
+**PROGRAM**   
 
-// sync_up_counter.v
-module synchronous #(
-    parameter WIDTH = 8           // counter width, change as needed
-)(
-    input  wire                 clk,   // clock (rising-edge)
-    input  wire                 rst,   // synchronous active-high reset
-    input  wire                 en,    // enable counting when high
-    output reg  [WIDTH-1:0]     count  // current count
-);
+<img width="514" height="517" alt="image" src="https://github.com/user-attachments/assets/a8f18006-b700-4451-855f-ad520f1773a4" />
 
-    // Synchronous logic
-    always @(posedge clk) begin
-        if (rst) begin
-            count <= {WIDTH{1'b0}}; // reset to 0 synchronously
-        end else if (en) begin
-            count <= count + 1'b1;  // increment on enable
-        end
-        // if !en, hold value
-    end
-
-endmodule
 
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
